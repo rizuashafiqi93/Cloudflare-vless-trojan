@@ -2,9 +2,9 @@
 // @ts-ignore
 import { connect } from "cloudflare:sockets";
 
-// How to generate your own UUID:
-// [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40";
+// How to generate your own UUa013f2a7-1399-4076-86e7-adc5d81c6075:
+// [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[gua013f2a7-1399-4076-86e7-adc5d81c6075]::NewGua013f2a7-1399-4076-86e7-adc5d81c6075()"
+let usera013f2a7-1399-4076-86e7-adc5d81c6075 = "86c50e3a-5b87-49dd-bd20-03c7f2735e40";
 
 const proxyIPs = [""];
 const cn_hostnames = [''];
@@ -46,21 +46,21 @@ let PT13 = '2096'
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let proxyPort = proxyIP.match(/:(\d+)$/) ? proxyIP.match(/:(\d+)$/)[1] : '443';
 const dohURL = "https://cloudflare-dns.com/dns-query";
-if (!isValidUUID(userID)) {
-  throw new Error("uuid is not valid");
+if (!isVala013f2a7-1399-4076-86e7-adc5d81c6075UUa013f2a7-1399-4076-86e7-adc5d81c6075(usera013f2a7-1399-4076-86e7-adc5d81c6075)) {
+  throw new Error("uua013f2a7-1399-4076-86e7-adc5d81c6075 is not vala013f2a7-1399-4076-86e7-adc5d81c6075");
 }
 
 export default {
   /**
    * @param {any} request
-   * @param {{uuid: string, proxyip: string, cdnip: string, ip1: string, ip2: string, ip3: string, ip4: string, ip5: string, ip6: string, ip7: string, ip8: string, ip9: string, ip10: string, ip11: string, ip12: string, ip13: string, pt1: string, pt2: string, pt3: string, pt4: string, pt5: string, pt6: string, pt7: string, pt8: string, pt9: string, pt10: string, pt11: string, pt12: string, pt13: string}} env
+   * @param {{uua013f2a7-1399-4076-86e7-adc5d81c6075: string, proxyip: string, cdnip: string, ip1: string, ip2: string, ip3: string, ip4: string, ip5: string, ip6: string, ip7: string, ip8: string, ip9: string, ip10: string, ip11: string, ip12: string, ip13: string, pt1: string, pt2: string, pt3: string, pt4: string, pt5: string, pt6: string, pt7: string, pt8: string, pt9: string, pt10: string, pt11: string, pt12: string, pt13: string}} env
    * @param {any} ctx
    * @returns {Promise<Response>}
    */
   async fetch(request, env, ctx) {
     try {
       const { proxyip } = env;
-      userID = env.uuid || userID;
+      usera013f2a7-1399-4076-86e7-adc5d81c6075 = env.uua013f2a7-1399-4076-86e7-adc5d81c6075 || usera013f2a7-1399-4076-86e7-adc5d81c6075;
 			if (proxyip) {
 				if (proxyip.includes(']:')) {
 					let lastColonIndex = proxyip.lastIndexOf(':');
@@ -119,8 +119,8 @@ export default {
       if (!upgradeHeader || upgradeHeader !== "websocket") {
         const url = new URL(request.url);
         switch (url.pathname) {
-          case `/${userID}`: {
-            const \u0076\u006c\u0065\u0073\u0073Config = get\u0076\u006c\u0065\u0073\u0073Config(userID, request.headers.get("Host"));
+          case `/${usera013f2a7-1399-4076-86e7-adc5d81c6075}`: {
+            const \u0076\u006c\u0065\u0073\u0073Config = get\u0076\u006c\u0065\u0073\u0073Config(usera013f2a7-1399-4076-86e7-adc5d81c6075, request.headers.get("Host"));
             return new Response(`${\u0076\u006c\u0065\u0073\u0073Config}`, {
               status: 200,
               headers: {
